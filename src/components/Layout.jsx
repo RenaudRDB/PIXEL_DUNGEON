@@ -8,14 +8,17 @@ import {View,
   export const Layout = ({children}) => {
   
     if (Platform.OS === 'android') {
-      return <View>
+      return (
+      <View>
         <StatusBar barStyle="default" />
         {children}
-        </View>
+      </View> )
     }else{
-      return <SafeAreaView>
+      return (
+      <SafeAreaView>
         <StatusBar barStyle="default" />
         {children}
-        </SafeAreaView>
+      </SafeAreaView>
+      )
     }
   };
