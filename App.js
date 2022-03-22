@@ -27,7 +27,7 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <Layout>
-      <Text>Non non non</Text>
+      <Text>ENFIIIIN!</Text>
         <NavigationContainer>
           <Tab.Navigator>
             <Tab.Screen name="Home" component={HomeScreen} />
