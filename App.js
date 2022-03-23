@@ -5,11 +5,49 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Layout } from './src/components/Layout';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 function HomeScreen() {
   return (
-    <View>
-    </View>
+	<>
+		<View style={{flex:2,
+		backgroundColor:'darkred',
+		marginTop:40,
+		marginLeft:40,
+		marginRight: 40,
+		marginBottom: 100,
+		}}>
+			<Text style={{
+				textAlign: 'center',
+				color:'white',
+				fontSize: 30
+			}}>Voici la futur image</Text>
+			<Text style={{
+				textAlign: 'center',
+				color:'white',
+				fontSize: 30
+			}}>Nom de l'ennemi</Text>
+		</View>
+		<View style={{flex:1,
+		backgroundColor:'darkgrey'}}>
+			<View style={{
+				flexDirection: "column",
+				alignItems: "flex-start",
+			}}>
+				<Text style={{ color:'black'}}>Vitesse: 1</Text>
+				<Text style={{ color:'white'}}>Dégâts: 1</Text>
+				<Text style={{ color:'white'}}>Armure: 0</Text>
+			</View>
+			<View style={{
+				flexDirection: "column",
+				alignItems: "flex-end",
+			}}>
+				<Text style={{ color:'white'}}>Critique: 0%</Text>
+				<Text style={{ color:'white'}}>Chance: 0%</Text>
+				<Text style={{ color:'white'}}>Puissance: 0x</Text>
+			</View>
+		</View>
+	</>
   );
 }
 
@@ -32,13 +70,13 @@ function GoldScreen() {
 			<Text>Vous avez: 5 Gold</Text>
 		</View>
 		<Text 
-			style={{  
+		style={{  
 			textAlign: 'center',
-			backgroundColor: '',
+			backgroundColor: 'lightgrey',
 			borderWidth: 1,
 			height:20,
-			}}>Achat
-		</Text>
+			}}
+			>Achat</Text> 
 		<View style={{ 
 			height:50,
 			alignItems: 'flex-start',
