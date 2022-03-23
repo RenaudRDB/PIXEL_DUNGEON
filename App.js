@@ -8,8 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>PixelDungeon</Text>
+    <View>
     </View>
   );
 }
@@ -23,9 +22,69 @@ function SettingsScreen() {
 }
 function GoldScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>GoldScreen</Text>
-    </View>
+    <View>
+		<View style={{ 
+			justifyContent: 'center', 
+			alignItems: 'center',
+			backgroundColor: 'yellow',
+			height:100,
+		}}>
+			<Text>Vous avez: 5 Gold</Text>
+		</View>
+		<Text 
+			style={{  
+			textAlign: 'center',
+			backgroundColor: '',
+			borderWidth: 1,
+			height:20,
+			}}>Achat
+		</Text>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			borderWidth: 1,
+			backgroundColor: 'darkorange'}}>
+			<Text>Entrainement de force</Text>
+			<View style={{backgroundColor:'grey',
+		width:50,
+		alignItems:'flex-end',}}>
+				<Text>20 XP</Text>
+			</View>
+		</View>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			borderWidth: 1,
+			backgroundColor: 'darkorange',
+			marginTop: 5}}>
+			<Text>Entrainement de vie</Text>
+			<View backgroundColor='grey'>
+				<Text>20 XP</Text>
+			</View>
+		</View>
+		<Text 
+			style={{  
+			textAlign: 'center',
+			backgroundColor: 'lightgrey',
+			borderWidth: 1,
+			height:20,
+			}}>Amélioration
+		</Text>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			borderWidth: 1,
+			backgroundColor: 'darkorange',
+			marginTop: 5}}>
+			<Text>Entrainement de défense</Text>
+			<View backgroundColor='grey'>
+				<Text>20 XP</Text>
+			</View>
+		</View>
+	</View>
   );
 }
 function XpScreen() {
@@ -52,6 +111,7 @@ function XpScreen() {
 			height:50,
 			alignItems: 'flex-start',
 			justifyContent: 'space-between',
+			borderWidth: 1,
 			backgroundColor: 'turquoise'}}>
 			<Text>Entrainement de force</Text>
 			<View style={{backgroundColor:'red',
@@ -64,6 +124,7 @@ function XpScreen() {
 			height:50,
 			alignItems: 'flex-start',
 			justifyContent: 'space-between',
+			borderWidth: 1,
 			backgroundColor: 'turquoise',
 			marginTop: 5}}>
 			<Text>Entrainement de vie</Text>
@@ -75,6 +136,7 @@ function XpScreen() {
 			height:50,
 			alignItems: 'flex-start',
 			justifyContent: 'space-between',
+			borderWidth: 1,
 			backgroundColor: 'turquoise',
 			marginTop: 5}}>
 			<Text>Entrainement de défense</Text>
