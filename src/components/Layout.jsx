@@ -9,16 +9,23 @@ import {View,
   
     if (Platform.OS === 'android') {
       return (
-      <View>
+      <View style={styles.container}>
         <StatusBar barStyle="default" />
         {children}
-      </View> )
+      </View> 
+      );
     }else{
       return (
-      <SafeAreaView>
-        <StatusBar barStyle="default" />
+      <SafeAreaView style={styles.container}>
+        <StatusBar barStyle="default"/>
         {children}
       </SafeAreaView>
       )
     }
   };
+  
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    }
+  });

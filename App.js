@@ -30,22 +30,59 @@ function GoldScreen() {
 }
 function XpScreen() {
   return (
-	<>
+	<View>
 		<View style={{ 
-			flex: 1, 
 			justifyContent: 'center', 
 			alignItems: 'center',
-			backgroundColor: 'lightblue',
-			width: 50,
-			}}>
-		<Text>Vous êtes lvl 0</Text>
-		<Text>Vous avez gagné 10Xp</Text>
+			backgroundColor: 'skyblue',
+			height:100,
+		}}>
+			<Text>Vous êtes lvl 0</Text>
+			<Text>Vous avez gagné 10Xp</Text>
+		</View>
+		<Text 
+			style={{  
+			textAlign: 'center',
+			backgroundColor: 'lightgrey',
+			borderWidth: 1,
+			height:20,
+			}}>Entrainement
+		</Text>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			backgroundColor: 'turquoise'}}>
+			<Text>Entrainement de force</Text>
+			<View style={{backgroundColor:'red',
+		width:50,
+		alignItems:'flex-end',}}>
+				<Text>20 XP</Text>
+			</View>
+		</View>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			backgroundColor: 'turquoise',
+			marginTop: 5}}>
+			<Text>Entrainement de vie</Text>
+			<View backgroundColor='red'>
+				<Text>20 XP</Text>
+			</View>
+		</View>
+		<View style={{ 
+			height:50,
+			alignItems: 'flex-start',
+			justifyContent: 'space-between',
+			backgroundColor: 'turquoise',
+			marginTop: 5}}>
+			<Text>Entrainement de défense</Text>
+			<View backgroundColor='red'>
+				<Text>20 XP</Text>
+			</View>
+		</View>
 	</View>
-	<Text>Entrainement</Text>
-		<View style={{ flex: 2, justifyContent: 'center', alignItems: 'center', backgroundColor: 'turquoise'}}>
-		<Text>Entrainement de force</Text>
-	</View>
-	</>
       
     
   );
@@ -55,19 +92,16 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <>
 		<Layout>
-
-     	 </Layout>
-		<NavigationContainer documentTitle={"Pixel Dungeon"}>
-			<Tab.Navigator>
-			<Tab.Screen name="Home" component={HomeScreen} />
-			<Tab.Screen name="GoldScreen" component={GoldScreen} />
-			<Tab.Screen name="XpScreen" component={XpScreen} />
-			<Tab.Screen name="Settings" component={SettingsScreen} />
-			</Tab.Navigator>
-		</NavigationContainer>
-    </>
+      <NavigationContainer documentTitle={"Pixel Dungeon"}>
+        <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="GoldScreen" component={GoldScreen} />
+        <Tab.Screen name="XpScreen" component={XpScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    </Layout>
   );
 }
 
