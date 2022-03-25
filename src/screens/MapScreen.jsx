@@ -5,18 +5,14 @@ export const MapScreen = () => {
     ['Dragon', 'Alice', 'Renaud'],
     ['EldenRing', 'Violent', 'Force'],
   ];
-
-  // const vides = [[4]];
   // const vides = [];
-  // const vides = [4[4]];
-  // const vides = [4][4];
   const vides = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0]
   ];
-  console.log('ceci est un tableau', vides[0]);
+  console.log('ceci est un tableau', vides);
 
   return (
     <View
