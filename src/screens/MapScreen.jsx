@@ -6,6 +6,18 @@ export const MapScreen = () => {
     ['EldenRing', 'Violent', 'Force'],
   ];
 
+  // const vides = [[4]];
+  // const vides = [];
+  // const vides = [4[4]];
+  // const vides = [4][4];
+  const vides = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
+  ];
+  console.log('ceci est un tableau', vides[0]);
+
   return (
     <View
       style={{
@@ -24,6 +36,17 @@ export const MapScreen = () => {
           />
         );
       })}
+      {/* {vides.map((vide)=> {
+        return (
+          <FlatList
+            data={vide}
+            renderItem={(vide) => {
+              console.log('quoi', vide);
+              return <Text>{vide.item}</Text>
+            }}
+          />
+        )
+      })} */}
     </View>
   );
 };
