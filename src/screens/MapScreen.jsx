@@ -1,27 +1,29 @@
-import { Text, View } from 'react-native';
-
-
+import { Text, View, FlatList } from 'react-native';
 
 export const MapScreen = () => {
-
-  const test = [
-    ["Dragon", "Alice", "Renaud"],
-    ["EldenRing", "Violent", "Force"]
-  ]
+  const tests = [
+    ['Dragon', 'Alice', 'Renaud'],
+    ['EldenRing', 'Violent', 'Force'],
+  ];
 
   return (
-    <View style={{ 
+    <View
+      style={{
         flex: 1,
-        backgroundColor:'black' }}>
-          {test.map((items, index) =>{
-            return (
-              <ol>
-                {items.map((subItems, sIndex)=> {
-                  return <li>{subItems}</li>;
-                })}
-              </ol>
-            );
-          })}
+        backgroundColor: 'white',
+      }}
+    >
+      {tests.map((test) => {
+        return (
+          <FlatList
+            data={test}
+            renderItem={({item}) => {
+              console.log('qqchose', item);
+              return <Text>{item}</Text>;
+            }}
+          />
+        );
+      })}
     </View>
   );
-}
+};
