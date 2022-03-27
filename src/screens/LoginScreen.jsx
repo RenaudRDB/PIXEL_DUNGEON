@@ -1,33 +1,39 @@
+import { useState } from "react";
+import { useAuth } from "../contexts/AuthProvider";
 import { Text, View, TextInput, Button, StyleSheet } from 'react-native';
 
-export const LoginScreen = () => {
+export const LoginScreen = ({}) => {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const { register, login } = useAuth();
+
     return (
 		<View style={styles.container}>
 			<Text>LOGIN or REGISTER</Text>
 			<TextInput
 				style={styles.input}
 				placeholder="Email"
-				//value={email}
-				//onChangeText={setEmail}
+				value={email}
+				onChangeText={setEmail}
 			/>
 			<TextInput
 				style={styles.input}
 				placeholder="Password"
-				//value={password}
-				//onChangeText={setPassword}
+				value={password}
+				onChangeText={setPassword}
 				secureTextEntry
 			/>
 			<Button
 				title="Login"
 				color="red"
-				// onPress={() => login(email, password)}
-				// disabled={!email || !password}
+				onPress={() => login(email, password)}
+				disabled={!email || !password}
 			/>
 			<Button
 				title="Register"
 				color="blue"
-				// onPress={() => register(email, password)
-				// disabled={!email || !password}
+				onPress={() => register(email, password)}
+				disabled={!email || !password}
 			/>
 		</View>
 	);

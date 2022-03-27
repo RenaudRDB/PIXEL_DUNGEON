@@ -12,10 +12,10 @@ const Tab = createBottomTabNavigator();
 export const TabNavigator = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name={ROUTES.ACTION} component={ActionScreen} />
-      <Tab.Screen name={ROUTES.MAP}component={MapScreen} />
-      <Tab.Screen name={ROUTES.STAT} component={StatScreen} />
-      <Tab.Screen name={ROUTES.PROFIL} component={ProfilScreen} />
+      <Tab.Screen options={{ headerShown: false }} name={ROUTES.ACTION} component={ActionScreen} />
+      <Tab.Screen options={{ headerShown: false }} name={ROUTES.MAP}component={MapScreen} />
+      <Tab.Screen options={{ headerShown: false }} name={ROUTES.STAT} component={StatScreen} />
+      <Tab.Screen options={{ headerShown: false }} name={ROUTES.PROFIL} component={ProfilScreen} />
     </Tab.Navigator>
   );
 };
