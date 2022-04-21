@@ -4976,6 +4976,13 @@ react-native-safe-area-view@^1.1.1:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
+react-native-square-grid@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-square-grid/-/react-native-square-grid-1.0.5.tgz#284e1eff16716dcf0eb9399495cdb5324b5c2d0e"
+  integrity sha512-vlPZFUWfSfgkWiXSfXlcNJZo0eBgSDb9HSGbYHI26xhrhZshr+PdlZEmWhllA7nF+5RgpY/FWwrZE6KatLo2IA==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native-web@0.17.1:
   version "0.17.1"
   resolved "https://registry.npmjs.org/react-native-web/-/react-native-web-0.17.1.tgz"

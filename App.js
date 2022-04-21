@@ -10,13 +10,13 @@ import { AuthProvider, useAuth, } from './src/contexts/AuthProvider';
 
 export default function App() {
   return (
-      <Layout>
-		<AuthProvider>
-			<NavigationContainer>
-				<Root />
-			</NavigationContainer>
-		</AuthProvider>
-      </Layout>
+    <Layout>
+			<AuthProvider>
+				<NavigationContainer>
+					<Root />
+				</NavigationContainer>
+			</AuthProvider>
+    </Layout>
   );
 }
 const Root = () => {

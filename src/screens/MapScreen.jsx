@@ -1,10 +1,7 @@
 import { Text, View, FlatList } from 'react-native';
+import SquareGrid from 'react-native-square-grid';
 
 export const MapScreen = () => {
-  const tests = [
-    ['Dragon', 'Alice', 'Renaud'],
-    ['EldenRing', 'Violent', 'Force'],
-  ];
   // const vides = [];
   const vides4 = [
     [0, 0, 0, 0],
