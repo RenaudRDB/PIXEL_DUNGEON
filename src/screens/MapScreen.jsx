@@ -6,13 +6,30 @@ export const MapScreen = () => {
     ['EldenRing', 'Violent', 'Force'],
   ];
   // const vides = [];
-  const vides = [
+  const vides4 = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0]
   ];
-  console.log('ceci est un tableau', vides);
+  const vides5 = [
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0]
+  ];
+  const vides6 = [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+  ];
+  console.log('Petit donjon :', vides4);
+  console.log('Moyen donjon :', vides5);
+  console.log('Grand donjon :', vides6);
 
   return (
     <View
@@ -21,12 +38,12 @@ export const MapScreen = () => {
         backgroundColor: 'white',
       }}
     >
-      {tests.map((test) => {
+      {vides4.map((test) => {
         return (
           <FlatList
             data={test}
             renderItem={({item}) => {
-              console.log('qqchose', item);
+              console.log('numéro :', item);
               return <Text>{item}</Text>;
             }}
           />

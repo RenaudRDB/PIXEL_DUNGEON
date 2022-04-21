@@ -41,6 +41,7 @@ export const AuthProvider = ({ children }) => {
 			});
 	};
 
+
 	const register = async (email, password) => {
 		setLoading(true);
 		createUserWithEmailAndPassword(auth, email, password).catch((error) => {
